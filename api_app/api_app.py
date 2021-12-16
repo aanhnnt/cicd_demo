@@ -16,11 +16,11 @@ def hello_world():
                 return jsonify(code=200, message='Success Request')
             else:
                 return jsonify(code=403, message='Invalid Request')
-                
-@app.route('/', methods=['POST', 'GET'])
-def index():
-    if request.method == 'GET':
-        return 'Tuan Anh Xin Chao Cac Ban'
+
+# @app.route('/', methods=['POST', 'GET'])
+# def index():
+#     if request.method == 'GET':
+#         return 'Tuan Anh Xin Chao Cac Ban'
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000, debug=True)
