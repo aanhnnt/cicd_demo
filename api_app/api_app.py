@@ -5,7 +5,7 @@ app = Flask(__name__)
 @app.route('/hello', methods=['POST', 'GET'])
 def hello_world():
     if request.method == 'GET':
-        return 'Hello World!'
+        return 'Hello World'
     else:
         json_request = request.get_json()
         if json_request is None:
